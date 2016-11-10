@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eye</title>
+	<style>
+		.eye {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: 1.2em;
+			background-color: #000;
+			border-radius: 50%;
+		}
+		.eye:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			width: .8em;
+			height: .8em;
+			background-color: #fff;
+			border-radius: 50%;
+		}
+		.eye:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			width: .4em;
+			height: .4em;
+			background-color: #000;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="eye"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>heart</title>
+	<style>
+		.heart {
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 1.4em;
+			height: 2em;
+			background-color: #000;
+			border-top-left-radius: 1em;
+			border-top-right-radius: 1em;
+			transform: rotate(-45deg);
+			transform-origin: center bottom;
+		}
+		.heart:after {
+			content: "";
+			position: absolute;
+			top: -.7em;
+			left: -.7em;
+			width: 1.4em;
+			height: 2em;
+			background-color: #000;
+			border-top-left-radius: 1em;
+			border-top-right-radius: 1em;
+			transform: rotate(90deg);
+			transform-origin: center bottom;
+		}
+	</style>
+</head>
+<body>
+	<div class="heart"></div>
+</body>
+</html>

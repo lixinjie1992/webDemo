@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义input[type="radio"]样式</title>
+	<style>
+body { margin: 0; }
+input { padding: 0; margin: 0; border: 0; }
+.female, .male {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 40px;
+}
+.sex label {
+	display: block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.sex input {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	margin: auto;
+	opacity: 0;
+	display: block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.sex span {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	margin: auto;
+	display: block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}		
+.sex span.active {
+	background-color: #000;			
+}
+	</style>
+</head>
+<body>
+<form action="">
+	<div class="sex">
+		<div class="female">
+			<label for="female">女</label>
+			<input type="radio" name="sex1" id="female">
+			<span class="female-custom"></span>
+		</div>
+		<div class="male">
+			<label for="male">男</label>
+			<input type="radio" name="sex2" id="male">
+			<span class="male-custom"></span>	
+		</div>
+	</div>
+</form>
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+$("#male").click( function () {
+	$(this).siblings("span").addClass("active");
+	$(this).parents("div").siblings("div").children("span").removeClass("active");
+});
+$("#female").click( function () {
+	$(this).siblings("span").addClass("active");
+	$(this).parents("div").siblings("div").children("span").removeClass("active");
+});
+	</script>
+</body>
+</html>

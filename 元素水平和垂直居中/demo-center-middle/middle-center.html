@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>让我水平和垂直居中</title>	
+	<meta charset="utf-8">
+	<style>
+    .parent-box {
+        position: relative;
+    	width: 900px;
+    	height: 500px;
+    	background-color: #f00;
+    }
+    .child-box {
+    	position: absolute;
+        top: 20%;
+        right: 20%;
+        bottom: 20%;
+        left: 20%;
+    	background-color: #f54;
+        box-sizing: border-box;
+        text-align: center;
+		font-size: 40px;
+    }
+	</style>
+</head>
+	<div class="parent-box">
+	  <div class="child-box">让我水平和垂直居中</div>
+	</div>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".child-box").css("lineHeight",$(".child-box").css("height"));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>phone</title>
+	<style>
+		.phone {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 1.4em;
+			height: 2em;
+			background-color: #efefef;
+			border-width: .3em .2em .5em;
+			border-style: solid;
+			border-color: #000;
+			border-radius: .15em;
+		}
+		.phone:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: -.4em;
+			left: 0;
+			margin: auto;
+			width: .5em;
+			height: .3em;
+			background-color: #fff;
+			border-radius: .3em;
+		}
+	</style>
+</head>
+<body>
+	<div class="phone"></div>
+</body>
+</html>

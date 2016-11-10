@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>video</title>
+	<style>
+		.video {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 1.5em;
+			height: 1.2em;
+			background-color: #000;
+			border-radius: .3em;
+		}
+		.video:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 1.4em;
+			margin-top: -.7em;
+			width: 0;
+			height: 0;
+			border-top: .7em solid transparent;
+			border-right: .6em solid #000;
+			border-bottom: .7em solid transparent;
+		} 
+	</style>
+</head>
+<body>
+	<div class="video"></div>
+</body>
+</html>

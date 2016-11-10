@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>left</title>
+	<style>
+		.left {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 0;
+			height: 0;
+			border-top: .9em solid transparent;
+			border-right: .9em solid #000;
+			border-bottom: .9em solid transparent;
+		}
+		.left:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: .7em;
+			margin: auto;
+			width: 1.3em;
+			height: .9em;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="left"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>stop</title>
+	<style>
+		.stop {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: 2em;
+			border: .2em solid #000;
+			border-radius: 50%;
+		}
+		.stop:after {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			width: .9em;
+			height: .9em;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="stop"></div>
+</body>
+</html>

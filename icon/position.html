@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		.position {
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: .6em;
+			height: .6em;
+			border: .4em solid #000;
+			border-radius: 50%;
+		}
+		.position:after {
+			content: "";
+			position: absolute;
+			top: .55em;
+			left: -.4em;
+			width: 0;
+			height: 0;
+			border-top: 1em solid #000;
+			border-right: .7em solid transparent;
+			border-left: .7em solid transparent;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="position"></div>
+</body>
+</html>

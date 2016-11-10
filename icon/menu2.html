@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu2</title>
+	<style>
+		.menu2 {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: .5em;
+			height: .5em;
+			background-color: #000;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.menu2:before {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -.75em;
+			width: .5em;
+			height: .5em;
+			background-color: #000;
+			border-radius: 50%;
+		}
+		.menu2:after {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: .75em;
+			width: .5em;
+			height: .5em;
+			background-color: #000;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu2"></div>
+</body>
+</html>

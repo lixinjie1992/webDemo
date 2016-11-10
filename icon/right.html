@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>right</title>
+	<style>
+		.right {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 1.3em;
+			height: .9em;
+			background-color: #000;
+		}
+		.right:after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 1.1em;
+			margin-top: -.9em;
+			width: 0;
+			height: 0;
+			border-top: .9em solid transparent;
+			border-bottom: .9em solid transparent;
+			border-left: .9em solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="right"></div>
+</body>
+</html>

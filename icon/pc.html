@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pc</title>
+	<style>
+		.pc {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: 1.4em;
+			border-width: .2em .2em .3em;
+			border-style: solid;
+			border-color: #000;
+			border-radius: .2em;
+			background-color: #efefef;
+		}
+		.pc:before {
+			content: "";
+			position: absolute;
+			top: 1.2em;
+			right: 0;
+			left: 0;
+			margin: auto;
+			width: .6em;
+			height: .4em;
+			background-color: #000;
+		}
+		.pc:after {
+			content: "";
+			position: absolute;
+			top: 1.6em;
+			right: 0;
+			left: 0;
+			margin: auto;
+			width: 1.6em;
+			height: .2em;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="pc"></div>
+</body>
+</html>

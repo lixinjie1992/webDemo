@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>email</title>
+	<style>
+		.email {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 0;
+			height: 0;
+			border-width: .7em 1em;
+			border-style: solid;
+			border-color: transparent transparent #000 #000;
+		}
+		.email:before {
+		 	content: "";
+		 	position: absolute;
+		 	top: -.7em;
+		 	left: 1em;
+		 	transform: rotateY(180deg);
+		 	transform-origin: left center;
+			width: 0;
+			height: 0;
+			border-width: .7em 1em;
+			border-style: solid;
+			border-color: transparent transparent #000 #000;
+		}
+		.email:after {
+			content: "";
+			position: absolute;
+			top: -.7em;
+			left: 50%;
+			margin-left: -.9em;
+			width: 0;
+			height: 0;
+			border-top: .6em solid #000;
+			border-right: .9em solid transparent;
+			border-left: .9em solid transparent;
+		}  */
+	</style>
+</head>
+<body>
+	<div class="email"></div>
+</body>
+</html>

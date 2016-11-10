@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>download</title>
+	<style>
+		.download {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: .8em;
+			border-width: .3em;
+			border-style: none solid solid;
+			border-color: #000;
+		}
+		.download:before {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: .7em;
+			left: 0;
+			margin: auto;
+			width: .3em;
+			height: 1em;
+			background-color: #000;
+		}
+		.download:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: .2em;
+			left: 0;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border-right: .6em solid transparent;
+			border-top: .6em solid #000;
+			border-left: .6em solid transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="download"></div>
+</body>
+</html>

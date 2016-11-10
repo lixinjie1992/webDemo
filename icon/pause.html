@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pause</title>
+	<style>
+		.pause {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: 2em;
+			border: .2em solid #000;
+			border-radius: 50%;
+		}
+		.pause:before {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: -.35em; /*没有让其左右居中，因为看起来右边更空一些*/
+			width: .2em;
+			height: .9em;
+			background-color: #000;
+		}
+		.pause:after {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: .15em; /*没有让其左右居中，因为看起来右边更空一些*/
+			width: .2em;
+			height: .9em;
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="pause"></div>
+</body>
+</html>

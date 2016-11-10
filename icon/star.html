@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>star</title>
+	<style>
+		.star {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 0;
+			height: 0;
+			border-top: .7em solid #000;
+			border-right: 1em solid transparent;
+			border-left: 1em solid transparent;
+		}
+		.star:before {
+			content: "";
+			position: absolute;
+			top: -.7em;
+			left: -1em;
+			width: 0;
+			height: 0;
+			border-top: .7em solid #000;
+			border-right: 1em solid transparent;
+			border-left: 1em solid transparent;
+			transform: rotate(72deg);
+		}
+		.star:after {
+			content: "";
+			position: absolute;
+			top: -.7em;
+			left: -1em;
+			width: 0;
+			height: 0;
+			border-top: .7em solid #000;
+			border-right: 1em solid transparent;
+			border-left: 1em solid transparent;
+			transform: rotate(-72deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="star"></div>
+</body>
+</html>

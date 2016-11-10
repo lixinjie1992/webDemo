@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>next</title>
+	<style>
+		.next {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 2em;
+			height: 2em;
+			border: .2em solid #000;
+			border-radius: 50%;
+		}
+		.next:before {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: -.4em; /*没有让其左右居中，因为看起来右边更空一些*/
+			width: 0;
+			height: 0;
+			border-top: .45em solid transparent;
+			border-bottom: .45em solid transparent;
+			border-left: .6em solid #000;
+		}
+		.next:after {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-top: auto;
+			margin-bottom: auto;
+			margin-left: .05em; /*没有让其左右居中，因为看起来右边更空一些*/
+			width: 0;
+			height: 0;
+			border-top: .45em solid transparent;
+			border-bottom: .45em solid transparent;
+			border-left: .6em solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="next"></div>
+</body>
+</html>

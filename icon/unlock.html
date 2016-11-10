@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>unlock</title>
+	<style>
+		.unlock {
+			box-sizing: border-box;
+			position: relative;
+			top: 2em;
+			left: 2em;
+			width: 1.6em;
+			height: 1.4em;
+			background-color: #000;
+			border-radius: .2em;
+		}
+		.unlock:before {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			top: -.4em;
+			right: -.4em;
+			width: 1em;
+			height: .6em;
+			border-width: .2em;
+			border-style: solid solid none;
+			border-color: #000;
+			border-radius: .5em;
+		}
+		.unlock:after {
+			box-sizing: border-box;
+			content: "";
+			position: absolute;
+			bottom: .2em;
+			left: 50%;
+			margin-left: -.15em;
+			width: .3em;
+			height: .5em;
+			border-top-left-radius: .25em;
+			border-top-right-radius: .25em;
+			background-color: #fff;
+		} 
+	</style>
+</head>
+<body>
+	<div class="unlock"></div>
+</body>
+</html>
